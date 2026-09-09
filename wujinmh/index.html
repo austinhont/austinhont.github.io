@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无尽漫画-无尽漫画大全与阅读指南</title>
+    <meta name="description" content="无尽漫画大全与阅读指南，为您提供无尽漫画的详细介绍、阅读方法、推荐作品、分类解析与常见问题解答，帮助每位漫画爱好者快速找到心仪的无尽世界。">
+    <meta name="keywords" content="无尽漫画,无尽漫画大全,无尽漫画阅读,无尽漫画推荐,无尽漫画指南,无尽漫画分类,无尽漫画常见问题">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #f6f4f0;
+            color: #2d2a26;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ========== Header & Branding ========== */
+        header {
+            background: linear-gradient(135deg, #1f1c1a 0%, #3a2e2a 100%);
+            padding: 18px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-icon {
+            font-size: 2rem;
+            background: #e8b04b;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: #1f1c1a;
+            font-weight: bold;
+        }
+
+        .brand-name {
+            color: #f5efe6;
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .brand-name span {
+            color: #e8b04b;
+        }
+
+        /* ========== Navigation ========== */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ddd2c5;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: #e8b04b;
+            border-bottom-color: #e8b04b;
+        }
+
+        /* ========== Hero Section ========== */
+        .hero {
+            background: linear-gradient(145deg, #f0e7db 0%, #e4d5c3 100%);
+            padding: 70px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #2d2a26;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 .accent {
+            color: #b4552d;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 760px;
+            margin: 0 auto 30px;
+            color: #4c423b;
+        }
+
+        .hero-btn {
+            display: inline-block;
+            background: #b4552d;
+            color: #fff;
+            padding: 14px 38px;
+            border-radius: 50px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 6px 16px rgba(180,85,45,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .hero-btn:hover {
+            background: #9a4523;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(180,85,45,0.35);
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 45px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #2d2a26;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6b5e54;
+            letter-spacing: 1px;
+        }
+
+        /* ========== Section general ========== */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            position: relative;
+            color: #2d2a26;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #6b5e54;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+        }
+
+        /* ========== Intro Section ========== */
+        .intro {
+            background: #fff;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-size: 1.8rem;
+            color: #2d2a26;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+            color: #4c423b;
+        }
+
+        .intro-card {
+            background: #faf6f1;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            border-left: 5px solid #e8b04b;
+        }
+
+        .intro-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: #2d2a26;
+        }
+
+        .intro-card ul {
+            list-style: none;
+        }
+
+        .intro-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #d8cfc6;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .intro-card li::before {
+            content: "✦";
+            color: #b4552d;
+            font-weight: bold;
+        }
+
+        /* ========== Category Cards ========== */
+        .categories {
+            background: #f6f4f0;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .cat-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 30px 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #e8b04b;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .cat-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .cat-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2d2a26;
+            font-weight: 700;
+        }
+
+        .cat-card p {
+            color: #5c524b;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .cat-tag {
+            display: inline-block;
+            background: #f3e9df;
+            color: #7a4a2a;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* ========== Reading Guide Section ========== */
+        .guide {
+            background: #fff;
+        }
+
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .step {
+            text-align: center;
+            padding: 20px 15px;
+            position: relative;
+        }
+
+        .step-num {
+            background: #b4552d;
+            color: #fff;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0 auto 15px;
+            box-shadow: 0 5px 14px rgba(180,85,45,0.3);
+        }
+
+        .step h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #2d2a26;
+        }
+
+        .step p {
+            font-size: 0.9rem;
+            color: #6b5e54;
+        }
+
+        /* ========== Recommended works (table-like) ========== */
+        .recommend {
+            background: #faf6f1;
+        }
+
+        .rec-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .rec-item {
+            background: #fff;
+            border-radius: 14px;
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+            transition: background 0.3s ease;
+        }
+
+        .rec-item:hover {
+            background: #fdf9f5;
+        }
+
+        .rec-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #2d2a26;
+        }
+
+        .rec-type {
+            background: #e8b04b;
+            color: #2d2a26;
+            font-size: 0.8rem;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* ========== Advantages ========== */
+        .advantages {
+            background: #fff;
+        }
+
+        .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .adv-item {
+            background: #faf6f1;
+            border-radius: 16px;
+            padding: 30px 25px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .adv-item:hover {
+            transform: scale(1.03);
+        }
+
+        .adv-icon {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .adv-item h3 {
+            font-size: 1.15rem;
+            margin-bottom: 10px;
+            color: #2d2a26;
+        }
+
+        .adv-item p {
+            color: #5c524b;
+            font-size: 0.95rem;
+        }
+
+        /* ========== FAQ ========== */
+        .faq {
+            background: #f6f4f0;
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 14px;
+            padding: 22px 30px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+            border-left: 4px solid #e8b04b;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #2d2a26;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #5c524b;
+        }
+
+        /* ========== Related topics ========== */
+        .related {
+            background: #fff;
+        }
+
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .related-link {
+            background: #f3e9df;
+            color: #7a4a2a;
+            padding: 10px 26px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .related-link:hover {
+            background: #b4552d;
+            color: #fff;
+            border-color: #b4552d;
+        }
+
+        /* ========== Footer ========== */
+        footer {
+            background: #1f1c1a;
+            color: #b9aba0;
+            padding: 45px 0 25px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .footer-links a {
+            color: #b9aba0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #e8b04b;
+        }
+
+        .footer-copy {
+            font-size: 0.9rem;
+            border-top: 1px solid #3a322e;
+            padding-top: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* ========== Responsive ========== */
+        @media (max-width: 992px) {
+            .intro-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .card-grid, .adv-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .guide-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+                gap: 15px;
+            }
+            .hero {
+                padding: 45px 0;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .hero-stats {
+                gap: 25px;
+            }
+            .card-grid, .adv-grid, .rec-list, .guide-steps {
+                grid-template-columns: 1fr;
+            }
+            section {
+                padding: 45px 0;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+            .brand-name {
+                font-size: 1.3rem;
+            }
+            .footer-links {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .stat-number {
+                font-size: 1.5rem;
+            }
+            .faq-item {
+                padding: 18px 18px;
+            }
+            .rec-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .cat-card, .adv-item {
+                padding: 22px 18px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="brand">
+            <div class="brand-icon">漫</div>
+            <div class="brand-name">无尽<span>漫画</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">无尽世界</a></li>
+                <li><a href="#categories">漫画分类</a></li>
+                <li><a href="#guide">阅读指南</a></li>
+                <li><a href="#recommend">作品推荐</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>无尽漫画<span class="accent">·</span>每一页都是新世界</h1>
+            <p>在无尽漫画的宇宙中，想象力没有边界。无论你是寻找热血冒险、悬疑烧脑，还是治愈日常，这里都有属于你的故事。开启一段永不停歇的阅读旅程。</p>
+            <a href="#categories" class="hero-btn">开始探索无尽世界</a>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">热门分类</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">随时可读</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">无尽想象</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 无尽漫画介绍 -->
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-text">
+                    <h2>什么是「无尽漫画」？</h2>
+                    <p>无尽漫画并非单一作品，而是一种开放、持续更新的漫画阅读生态。它包含了连载中的长篇故事、不断延展的系列作品，以及由读者社区共同推动的二次创作内容。</p>
+                    <p>在无尽漫画的世界里，故事可以无限延伸，角色不断成长，世界观持续扩张。无论是日式少年漫、韩漫、国漫，还是独立创作者的作品，都能在无尽漫画的框架下找到自己的位置。</p>
+                    <p>对于热爱追更的读者而言，无尽漫画代表的是持续更新的快乐；对于喜欢挖掘深度内容的读者来说，它意味着纵横交错的故事网络和丰富的背景设定。</p>
+                </div>
+                <div class="intro-card">
+                    <h3>为什么选择无尽漫画？</h3>
+                    <ul>
+                        <li>海量作品持续连载，永远有新的故事等待开启</li>
+                        <li>多种题材覆盖：热血、恋爱、悬疑、科幻、奇幻、日常</li>
+                        <li>跟随作者的笔触，体验角色从平凡到非凡的成长历程</li>
+                        <li>社区讨论活跃，与同好分享解读与预测</li>
+                        <li>跨越国界，接触不同文化背景下的漫画艺术</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 漫画分类 -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">无尽漫画的主要类型</h2>
+            <p class="section-subtitle">无论你是初次接触还是资深漫迷，了解分类能帮你更快找到心仪的作品</p>
+            <div class="card-grid">
+                <div class="cat-card">
+                    <span class="cat-icon">⚔️</span>
+                    <h3>热血冒险</h3>
+                    <p>少年成长、伙伴羁绊、不断挑战更强的对手。从默默无闻到拯救世界，每一场战斗都让人热血沸腾。</p>
+                    <span class="cat-tag">代表作 · 少年向</span>
+                </div>
+                <div class="cat-card">
+                    <span class="cat-icon">🔍</span>
+                    <h3>悬疑烧脑</h3>
+                    <p>层层递进的谜团、意想不到的反转、复杂的人物关系。适合喜欢动脑推理、享受揭晓真相快感的读者。</p>
+                    <span class="cat-tag">推理 · 智斗</span>
+                </div>
+                <div class="cat-card">
+                    <span class="cat-icon">🌌</span>
+                    <h3>科幻奇幻</h3>
+                    <p>异世界、未来科技、魔法与机械。想象力的极致释放，构建出令人叹为观止的世界观体系。</p>
+                    <span class="cat-tag">异世界 · 赛博朋克</span>
+                </div>
+                <div class="cat-card">
+                    <span class="cat-icon">💕</span>
+                    <h3>恋爱日常</h3>
+                    <p>细腻的情感描写、校园或职场中的心动瞬间。轻松治愈，也能让人心跳加速。</p>
+                    <span class="cat-tag">纯爱 · 日常</span>
+                </div>
+                <div class="cat-card">
+                    <span class="cat-icon">👻</span>
+                    <h3>恐怖惊悚</h3>
+                    <p>营造紧张氛围，挑战心理极限。从灵异传说到人性黑暗面，带来独特的阅读体验。</p>
+                    <span class="cat-tag">灵异 · 心理</span>
+                </div>
+                <div class="cat-card">
+                    <span class="cat-icon">🏆</span>
+                    <h3>运动竞技</h3>
+                    <p>球场上的汗水与荣耀，为梦想拼搏的青春故事。团队合作与个人突破的完美结合。</p>
+                    <span class="cat-tag">热血 · 成长</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 阅读指南 -->
+    <section class="guide" id="guide">
+        <div class="container">
+            <h2 class="section-title">如何开始无尽漫画之旅？</h2>
+            <p class="section-subtitle">四个简单步骤，帮助你快速融入无尽漫画的精彩世界</p>
+            <div class="guide-steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>确定喜好</h3>
+                    <p>回顾自己喜欢的故事类型、影视剧或文学作品，据此选择漫画类别。</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>试读先行</h3>
+                    <p>大多数作品都有免费试读章节，先阅读前几话感受画风和叙事节奏。</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>关注更新</h3>
+                    <p>收藏喜欢的作品，留意更新规律，不错过每一话的精彩内容。</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <h3>参与社区</h3>
+                    <p>加入读者讨论区，分享你的看法与预测，结识同好，让阅读更有乐趣。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品推荐 -->
+    <section class="recommend" id="recommend">
+        <div class="container">
+            <h2 class="section-title">值得关注的无尽漫画作品类型</h2>
+            <p class="section-subtitle">以下类型中往往隐藏着长篇连载的经典之作，值得深入挖掘</p>
+            <div class="rec-list">
+                <div class="rec-item">
+                    <div>
+                        <div class="rec-title">超长连载 · 世界观宏大的史诗</div>
+                        <div style="font-size:0.9rem; color:#6b5e54; margin-top:4px;">追随主角跨越数十年时光，见证整个世界演变</div>
+                    </div>
+                    <span class="rec-type">深度推荐</span>
+                </div>
+                <div class="rec-item">
+                    <div>
+                        <div class="rec-title">单元剧形式 · 节奏轻松</div>
+                        <div style="font-size:0.9rem; color:#6b5e54; margin-top:4px;">每几话一个独立小故事，随时可以轻松阅读</div>
+                    </div>
+                    <span class="rec-type">入门之选</span>
+                </div>
+                <div class="rec-item">
+                    <div>
+                        <div class="rec-title">多主角群像 · 视角丰富</div>
+                        <div style="font-size:0.9rem; color:#6b5e54; margin-top:4px;">从不同人物视角展开故事，拼凑出完整真相</div>
+                    </div>
+                    <span class="rec-type">烧脑爱好</span>
+                </div>
+                <div class="rec-item">
+                    <div>
+                        <div class="rec-title">衍生外传 · 扩展宇宙</div>
+                        <div style="font-size:0.9rem; color:#6b5e54; margin-top:4px;">主线之外的角色故事、前传补完，丰富主世界</div>
+                    </div>
+                    <span class="rec-type">系列控</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势特点 -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">无尽漫画的独特之处</h2>
+            <p class="section-subtitle">为什么越来越多人选择沉浸在无尽漫画的世界中？</p>
+            <div class="adv-grid">
+                <div class="adv-item">
+                    <span class="adv-icon">📖</span>
+                    <h3>内容持续更新</h3>
+                    <p>与传统完结作品不同，无尽漫画往往保持稳定的连载节奏，每周都有新内容可看，陪伴感极强。</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-icon">🌍</span>
+                    <h3>世界观深度拓展</h3>
+                    <p>优秀的长篇作品会不断丰富历史、势力、人物关系，让世界愈发真实可信，沉浸感倍增。</p>
+                </div>
+                <div class="adv-item">
+                    <span class="adv-icon">🤝</span>
+                    <h3>读者共同成长</h3>
+                    <p>长时间连载的作品中，读者与角色、作者之间形成独特的情感纽带，共同经历漫长旅程。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">读者常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Q：无尽漫画与普通漫画有什么区别？</div>
+                    <div class="faq-answer">A：普通漫画通常有明确的完结计划，而无尽漫画更强调连载的持续性和世界观的延展性，故事可能持续数年甚至更久，形成庞大的系列。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：追更无尽漫画需要付费吗？</div>
+                    <div class="faq-answer">A：大部分平台提供免费试读，后续章节通常通过订阅、单话购买或等待限时免费等方式解锁。不同平台规则不同，建议阅读前查看具体说明。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：如何避免追更焦虑？</div>
+                    <div class="faq-answer">A：可以同时追3-5部不同更新周期的作品，或者选择已连载较多话数的作品开始阅读，这样每次都有足够的存量内容。也可以加入讨论群组，与其他读者交流等待心得。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：无尽漫画适合哪些人群阅读？</div>
+                    <div class="faq-answer">A：几乎适合所有年龄层。青少年喜欢热血成长，成年人则可能更偏爱悬疑、职场或深度剧情类。关键是找到符合自己兴趣的类型。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Q：从哪部作品开始入门比较好？</div>
+                    <div class="faq-answer">A：建议从口碑稳定、连载超过100话的热门作品开始，这类作品通常画风成熟、剧情经过市场验证。也可以先从短小精悍的单元剧尝试。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关主题 -->
+    <section class="related">
+        <div class="container">
+            <h2 class="section-title">延伸阅读主题</h2>
+            <p class="section-subtitle">探索更多与无尽漫画相关的领域</p>
+            <div class="related-links">
+                <a href="#" class="related-link">长篇漫画推荐</a>
+                <a href="#" class="related-link">漫画画风赏析</a>
+                <a href="#" class="related-link">每周漫画更新</a>
+                <a href="#" class="related-link">漫画家访谈</a>
+                <a href="#" class="related-link">漫画改编动画</a>
+                <a href="#" class="related-link">漫画社区讨论</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">关于无尽漫画</a>
+            <a href="#">阅读协议</a>
+            <a href="#">隐私政策</a>
+            <a href="#">联系我们</a>
+            <a href="#">帮助中心</a>
+        </div>
+        <div class="footer-copy">
+            <p>© 2024 无尽漫画阅读指南 · 本页面仅提供漫画信息介绍与阅读参考，所有作品版权归原作者所有。</p>
+            <p style="margin-top:8px;">在无尽漫画的世界里，每一页都是新的开始，每一次翻页都是新的冒险。</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+                  </html>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不知火舞漫画-不知火舞漫画大全与角色鉴赏指南</title>
+    <meta name="description" content="不知火舞漫画专题页，介绍不知火舞在漫画中的经典形象、主要作品、角色魅力、阅读建议与常见问题，帮助漫画爱好者快速了解这位经典格斗女忍者的漫画世界。">
+    <meta name="keywords" content="不知火舞漫画,不知火舞,不知火舞角色,不知火舞漫画推荐,格斗漫画,拳皇漫画,饿狼传说漫画,不知火舞漫画大全">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f7f4f0;
+            color: #2d2a26;
+            line-height: 1.7;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            padding: 18px 0;
+            border-bottom: 3px solid #e63946;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .brand-icon {
+            font-size: 32px;
+            line-height: 1;
+        }
+        .brand-name {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .brand-name span {
+            color: #ffd166;
+        }
+        .header-nav ul {
+            display: flex;
+            gap: 28px;
+        }
+        .header-nav a {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+        }
+        .header-nav a:hover {
+            color: #ffd166;
+            border-bottom-color: #ffd166;
+        }
+
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(to bottom, #1a1a2e, #2b2d42);
+            color: #fff;
+            padding: 60px 0 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(230, 57, 70, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(255, 209, 102, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+            line-height: 1.3;
+        }
+        .hero h1 .highlight {
+            color: #ffd166;
+        }
+        .hero p {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .btn-primary {
+            background-color: #e63946;
+            color: #fff;
+            border-color: #e63946;
+        }
+        .btn-primary:hover {
+            background-color: #c92a35;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(230, 57, 70, 0.3);
+        }
+        .btn-outline {
+            background: transparent;
+            color: #ffd166;
+            border-color: #ffd166;
+        }
+        .btn-outline:hover {
+            background-color: rgba(255, 209, 102, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* 内容区 */
+        .main-content {
+            padding: 60px 0;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 18px;
+            line-height: 1.4;
+        }
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 6px;
+            height: 24px;
+            background-color: #e63946;
+            border-radius: 3px;
+        }
+        .section-subtitle {
+            font-size: 15px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid transparent;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            border-top-color: #e63946;
+        }
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 14px;
+            line-height: 1;
+        }
+        .card h3 {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* 详细介绍区域 */
+        .detail-section {
+            background: #fff;
+            border-radius: 16px;
+            padding: 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+        .detail-section h2 {
+            font-size: 24px;
+            margin-bottom: 18px;
+            color: #1a1a2e;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .detail-section h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #e63946, #ffd166);
+            border-radius: 2px;
+        }
+        .detail-section p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            color: #444;
+        }
+        .detail-section ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        .detail-section ul li {
+            list-style: disc;
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #444;
+        }
+
+        /* 步骤 */
+        .steps-list {
+            counter-reset: step-counter;
+            padding: 0;
+        }
+        .steps-list li {
+            list-style: none;
+            position: relative;
+            padding: 16px 20px 16px 60px;
+            background: #f8f6f3;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            font-size: 15px;
+            color: #333;
+            counter-increment: step-counter;
+        }
+        .steps-list li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 34px;
+            height: 34px;
+            background: #e63946;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        .steps-list li strong {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #1a1a2e;
+        }
+
+        /* 注意事项 */
+        .notice-box {
+            background: #fff8f0;
+            border-left: 4px solid #ff9f43;
+            padding: 18px 24px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+        .notice-box p {
+            margin-bottom: 6px !important;
+            font-size: 14px !important;
+        }
+        .notice-box strong {
+            color: #c26a00;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 22px 24px;
+            margin-bottom: 14px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+            border-left: 4px solid #e63946;
+        }
+        .faq-item h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* 相关主题链接 */
+        .related-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 20px;
+        }
+        .related-links a {
+            display: inline-block;
+            background: #f0edec;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #333;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        .related-links a:hover {
+            background: #e63946;
+            color: #fff;
+            border-color: #e63946;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1a1a2e;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 40px 0 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .footer-col h4 {
+            font-size: 16px;
+            color: #ffd166;
+            margin-bottom: 12px;
+        }
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.6);
+            transition: color 0.3s;
+        }
+        .footer-col a:hover {
+            color: #ffd166;
+        }
+        .copyright {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+            }
+            .header-nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+            .hero h1 {
+                font-size: 30px;
+            }
+            .hero p {
+                font-size: 15px;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .detail-section {
+                padding: 24px 18px;
+            }
+            .section-title {
+                font-size: 22px;
+            }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            .footer-col {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 14px;
+            }
+            .hero {
+                padding: 40px 0;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="brand">
+            <span class="brand-icon">🔥</span>
+            <span class="brand-name">不知火舞<span>漫画</span>专题</span>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#intro">角色介绍</a></li>
+                <li><a href="#works">漫画作品</a></li>
+                <li><a href="#charm">角色魅力</a></li>
+                <li><a href="#guide">阅读指南</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>不知火舞<span class="highlight">漫画</span> · 经典格斗女忍者的漫画世界</h1>
+        <p>从《饿狼传说》到《拳皇》，不知火舞以其独特的魅力成为格斗漫画中最具辨识度的角色之一。这里为你梳理她在漫画中的登场作品、角色特质与阅读路径。</p>
+        <div class="hero-buttons">
+            <a href="#works" class="btn btn-primary">浏览经典漫画</a>
+            <a href="#guide" class="btn btn-outline">阅读指南</a>
+        </div>
+    </div>
+</section>
+
+<main class="main-content">
+    <div class="container">
+
+        <!-- 角色介绍 -->
+        <section class="section" id="intro">
+            <h2 class="section-title">不知火舞是谁？</h2>
+            <p class="section-subtitle">从游戏屏幕走向漫画纸面的经典角色</p>
+            <div class="detail-section">
+                <p>不知火舞是日本SNK公司旗下格斗游戏《饿狼传说》系列中登场的女性格斗家，后因在《拳皇》系列中频繁登场而广为人知。她出身于忍者流派“不知火流”，擅长使用扇子进行攻击与火遁之术，性格热情直率，同时也有温柔细腻的一面。</p>
+                <p>在漫画领域，不知火舞并非单一作品中的角色，而是跨越多个系列、多个作者笔下，在不同故事线中展现出不同的侧面。对于喜欢格斗题材漫画或经典游戏IP改编漫画的读者来说，不知火舞是一个绕不开的标志性人物。</p>
+                <p>她的形象通常以红色紧身忍者服、手持折扇、金色长发为标志，兼具力量感与视觉冲击力，这也是她能在众多格斗角色中长久保持高人气的关键原因。</p>
+            </div>
+        </section>
+
+        <!-- 漫画作品 -->
+        <section class="section" id="works">
+            <h2 class="section-title">不知火舞主要漫画作品概览</h2>
+            <p class="section-subtitle">了解哪些漫画中能见到她的身影</p>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon">🐺</div>
+                    <h3>《饿狼传说》系列漫画</h3>
+                    <p>作为不知火舞的“原始主场”，饿狼传说系列漫画中她的形象更偏向传统忍者与女性格斗家的结合。故事围绕南镇格斗大赛展开，她与特瑞·博加德等人物的互动是看点之一。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🥊</div>
+                    <h3>《拳皇》系列漫画</h3>
+                    <p>在拳皇系列漫画中，不知火舞的人气达到顶峰。她与安迪·博加德的感情线、与队友的配合以及独立战斗的场面，成为许多读者接触该角色的起点。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>官方授权改编漫画</h3>
+                    <p>除主线作品外，SNK曾授权不同画师创作以不知火舞为主角的短篇或外传漫画，这些作品往往更侧重刻画她的日常生活、修行经历或与宿敌的对决，风格各异。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>同人漫画与画集</h3>
+                    <p>不知火舞在同人创作领域同样活跃。许多画师基于其设定延伸出风格多样的同人漫画作品，涵盖轻松日常、热血战斗等不同调性，满足各类读者喜好。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>衍生合辑与电子版</h3>
+                    <p>近年来，部分经典格斗漫画以电子书形式重新发行，收录不知火舞登场章节的合辑也逐渐增多，方便新读者通过手机或平板直接阅读。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🌏</div>
+                    <h3>海外汉化与连载</h3>
+                    <p>由于原作多为日文，中文读者通常通过汉化组或正版授权平台阅读不知火舞相关漫画。不同版本的翻译质量与画质差异较大，选择时需要注意来源。</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 角色魅力 -->
+        <section class="section" id="charm">
+            <h2 class="section-title">不知火舞的角色魅力为何长盛不衰？</h2>
+            <p class="section-subtitle">从形象、性格到战斗风格的多维解析</p>
+            <div class="detail-section">
+                <h2>视觉标志性极强</h2>
+                <p>红色忍者装束、高马尾、手持折扇——不知火舞的造型在诞生之初就极具辨识度。在漫画分镜中，她的动作设计往往融合了忍者的敏捷与舞蹈般的优雅，使每一格画面都充满张力。</p>
+                
+                <h2>性格反差带来故事深度</h2>
+                <p>她表面上开朗甚至有些冒失，但面对战斗和同伴时却极其认真。在漫画故事中，这种反差不仅制造了轻松的笑点，也让她在关键时刻的抉择更具情感分量。她对安迪的执着感情，也是贯穿多部作品的一条暗线。</p>
+                
+                <h2>战斗风格独特易辨识</h2>
+                <p>不知火流的忍术以“扇子”与“火焰”为核心，她的招牌必杀技如“花蝶扇”“超必杀忍蜂”等，在漫画中被描绘成兼具速度与破坏力的招式。这种带有日式传统元素的战斗方式，与同时代其他格斗角色形成了鲜明区分。</p>
+                
+                <h2>跨作品联动增强存在感</h2>
+                <p>不知火舞不仅是《饿狼传说》的角色，更通过《拳皇》系列与大量其他IP联动，使得她在不同世界观中都能登场。这种“跨作品”属性，让她的漫画故事线更加丰富多元。</p>
+            </div>
+        </section>
+
+        <!-- 阅读指南 -->
+        <section class="section" id="guide">
+            <h2 class="section-title">不知火舞漫画阅读指南</h2>
+            <p class="section-subtitle">新手如何开始阅读？按步骤来就好</p>
+            <ol class="steps-list">
+                <li>
+                    <strong>明确兴趣方向</strong>
+                    先想清楚自己是想看热血战斗剧情、角色情感发展，还是单纯欣赏不知火舞的视觉表现。不同漫画侧重完全不同，先明确目标才能选对作品。
+                </li>
+                <li>
+                    <strong>从拳皇系列入门</strong>
+                    对于大部分中文读者而言，《拳皇》系列漫画是接触不知火舞最直接的入口。该系列作品数量多、画风成熟，且她在其中戏份较为稳定。
+                </li>
+                <li>
+                    <strong>追溯饿狼传说原作</strong>
+                    如果想了解不知火舞的“本源设定”，可以回溯《饿狼传说》相关漫画。这部分作品更能体现她作为“不知火流忍者”的根基与早期性格塑造。
+                </li>
+                <li>
+                    <strong>挑选优质汉化资源</strong>
+                    优先选择正版授权平台或口碑较好的汉化组作品，避免因翻译粗糙或画面裁切影响阅读体验。注意对比不同版本的画质与注释质量。
+                </li>
+                <li>
+                    <strong>关注番外与短篇</strong>
+                    在主线之外，许多短篇或番外漫画会展示不知火舞不为人知的日常侧面，例如修行经历、与其他女性角色的互动等，适合想要深入理解角色的读者。
+                </li>
+                <li>
+                    <strong>结合游戏原作理解</strong>
+                    漫画往往基于游戏剧情改编，如果对游戏中的故事背景有基本了解，阅读漫画时会更容易理解人物动机和世界观设定。
+                </li>
+            </ol>
+            
+            <div class="notice-box">
+                <p><strong>注意：</strong>不同漫画对不知火舞的刻画存在差异，部分作品可能侧重夸张表现，部分则趋于写实。建议不要以单一作品中的形象作为唯一标准，多方对比更能体会角色全貌。</p>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="section" id="faq">
+            <h2 class="section-title">关于不知火舞漫画的常见问题</h2>
+            <p class="section-subtitle">整理读者最关心的一些疑问</p>
+            
+            <div class="faq-item">
+                <h3>Q1：不知火舞最早出现在哪部漫画中？</h3>
+                <p>不知火舞最初登场于SNK游戏《饿狼传说2》，随后在基于该系列改编的官方漫画中开始出现。具体最早的漫画化时间因不同作者和连载平台而异，但基本都围绕饿狼传说与拳皇两大主线展开。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q2：不知火舞漫画是正式出版的吗？</h3>
+                <p>部分是SNK官方授权出版的漫画，例如由画师绘制并连载于漫画杂志的版本；也有部分是同人作品。官方作品通常有明确授权标志，同人作品则多在个人渠道发布。建议优先阅读官方授权内容。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q3：不知火舞在漫画中与游戏设定一致吗？</h3>
+                <p>大体一致，但漫画为增强叙事性会对细节进行调整。例如部分招式在漫画中会有更夸张的视觉效果，人物性格也可能在特定剧情中被放大。总体上核心设定是稳定的。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q4：有没有以不知火舞为主角的独立漫画？</h3>
+                <p>目前尚未有长期连载的、完全以不知火舞为唯一主角的大型独立漫画系列。不过官方曾推出过以她为封面的短篇故事或特别篇，同人领域则有更多以她为核心的作品。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q5：在哪里可以读到不知火舞漫画中文版？</h3>
+                <p>正版渠道方面，部分电子漫画平台引入了SNK相关授权作品；此外，贴吧、漫画社区等也有热心汉化组翻译的版本。建议支持正版以获得清晰的画质和准确的翻译。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q6：不知火舞漫画适合所有年龄段吗？</h3>
+                <p>大部分格斗题材漫画包含战斗场面，整体风格偏热血，适合青少年及以上读者。个别同人作品可能包含更成熟的内容，阅读前可留意作品标注的受众定位。</p>
+            </div>
+        </section>
+
+        <!-- 相关主题 -->
+        <section class="section">
+            <h2 class="section-title">相关主题延伸阅读</h2>
+            <p class="section-subtitle">如果你喜欢不知火舞，以下内容或许也合你口味</p>
+            <div class="related-links">
+                <a href="#intro">不知火流忍术解析</a>
+                <a href="#works">SNK格斗漫画总览</a>
+                <a href="#charm">格斗游戏女性角色盘点</a>
+                <a href="#guide">拳皇漫画阅读顺序</a>
+                <a href="#faq">饿狼传说与拳皇世界观区别</a>
+                <a href="#works">经典忍者角色漫画推荐</a>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>🔥 不知火舞漫画专题</h4>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.5); max-width: 300px;">专注于经典格斗角色不知火舞的漫画作品梳理与阅读推荐，为爱好者提供有价值的信息参考。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#intro">角色介绍</a></li>
+                    <li><a href="#works">漫画作品</a></li>
+                    <li><a href="#charm">角色魅力</a></li>
+                    <li><a href="#guide">阅读指南</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>更多帮助</h4>
+                <ul>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#guide">新手入门</a></li>
+                    <li><a href="#works">作品推荐</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2025 不知火舞漫画专题页 · 本页内容仅供爱好者交流学习，所有角色版权归原公司所有</p>
+    </div>
+</footer>
+
+</body>
+                          </html>
